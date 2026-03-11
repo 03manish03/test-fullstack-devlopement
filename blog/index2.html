@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Using Css Properties</title>
+  </head>
+  <body style="font-size: 16px">
+    <!-- Example 1: px (Pixels) -->
+    <p style="font-size: 20px">
+      This paragraph uses a font-size of 20px. Pixels are an absolute unit,
+      meaning the size remains constant across different screen sizes.
+    </p>
+
+    <div style="background-color: yellow; width: 200px">
+      Div with a fixed width of 200px
+    </div>
+
+    <div style="background-color: skyblue; width: 50%">
+      Div with a relative width of 50%
+    </div>
+
+    <!-- Example 2: rem (Root Em) --->
+    <p style="font-size: 1.5rem">
+      This paragraph uses a font-size of 1.5rem, which is relative to the root
+      element's font size (16px). So 1.5rem = 24px.
+    </p>
+
+    <!-- Example 3: em (Relative to Parent) -->
+    <div style="font-size: 20px">
+      Parent element font-size: 20px.
+      <p style="font-size: 1.5em">
+        This child paragraph has a font-size of 1.5em, relative to the parent
+        (20px). So 1.5em = 30px.
+      </p>
+    </div>
+
+    <!-- Example 4: vh (Viewport Height) -->
+    <div style="height: 50vh; background-color: beige">
+      This div takes up 50% of the viewport height, as 50vh equals half the
+      height of the browser window.
+    </div>
+
+    <!-- Example 5: vw (Viewport Width) -->
+    <div style="width: 30vw; background-color: aqua">
+      This div takes up 30% of the viewport width, as 50vw equals half the width
+      of the browser window.
+    </div>
+  </body>
+</html>
